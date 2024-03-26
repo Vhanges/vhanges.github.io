@@ -93,8 +93,3 @@
     border-right: 50rem solid transparent;
     border-bottom: 20rem solid var(--shamrock-100);
 }
-
-.triangle-container > div > h2{
-    position: relative;
-    top: 200px;
-}

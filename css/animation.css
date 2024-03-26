@@ -111,16 +111,13 @@
       align-items: center;
       background: linear-gradient(145deg, var(--shamrock-400), var(--shamrock-600));
       box-shadow: 6px 6px 12px var(--shamrock-700), -6px -6px 12px var(--shamrock-300);
-  }
-  
-  .v-more:hover {
-    animation: bounce 1s infinite;
+      animation: bounce 1s infinite;
   }
   
   /* Picture Card */
 
   .image-side{
-    height: 100vh;
+    height: 100%;
     width: 50%;
     background-size: cover;
     float: left;
@@ -155,6 +152,17 @@
 }
 
 .t-change.white-change{
+  color: var(--clr-white);
+}
+
+.nab.nab-border{
+  background-color: var(--shamrock-900);
+  height: 3.2rem;
+
+}
+
+.t-change.waytiwayt,
+.t-change2.waytiwayt{
   color: var(--clr-white);
 }
 

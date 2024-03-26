@@ -8,10 +8,12 @@ body{
   overflow-x: hidden !important ;
   perspective: 1px;
   transform-style: preserve-3d;
+  background-color: var(--shamrock-100) !important;
   margin: 0;
   padding: 0;
-  background-image: radial-gradient(circle at bottom, var(--shamrock-secondary), var(--shamrock-primary), var(--clr-white));
 }
+
+
 
 :root{
     --clr-white:#f8fcfa;
@@ -58,10 +60,19 @@ body{
   font-weight: 600;
   font-style: normal;
 }
+
+.karla-medium2{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font: large;
+}
+
   .rubik-normal {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-size: 15px;
   }
@@ -103,17 +114,16 @@ body{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
 main{
-  height: 100vh;
+  height: 120vh;
   background-image: radial-gradient(circle at bottom, var(--shamrock-secondary), var(--shamrock-primary), var(--clr-white));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  float: top;
 }
 
 .tnav-a{
@@ -150,7 +160,7 @@ main{
   grid-area: title;
 }
 
-.v-more-container{
+.hero > .v-more-container{
   grid-area: button;
   display: flex;
   align-self: start;
@@ -158,9 +168,20 @@ main{
   text-decoration: none;
 }
 
+.about-content > .v-more-container{
+  text-decoration: none;
+}
+
+.about-content > .v-more-container > .v-more{
+  position: relative;
+  left: 90%;
+  top: 10%;
+}
+
+
 .about-me{
   height: 100vh;
-  background-image: linear-gradient(var(--shamrock-primary), var(--shamrock-100));
+  background-color: #E9FFF5;
 }
 
 
@@ -179,36 +200,48 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	background-color: #FFF;
+	background-color: transparent;
 	background-image: -webkit-gradient(linear,
 									   40% 0%,
 									   75% 84%,
 									   from(var(--shamrock-100)),
 									   to(var(--shamrock-200)),
-									   color-stop(.6,var(--shamrock-300)))
+									    color-stop(.6,var(--shamrock-300)))
 }
 
 .nab{
   color: transparent;
 }
 
+.nav{
+  position: relative;
+  top: 0.5rem;
+}
+
 .eduTimeline{
-  height: 1000px;
+  height: 1200px;
   background-image: linear-gradient(var(--shamrock-primary), var(--shamrock-100));
 }
 
+.h-timeline{
+  position: relative;
+  top: 5rem;
+}
 
 .about-content{
-  background-color: var(--shamrock-400);
-  height: 100vh;
+  background-color: var(--shamrock-secondary);
+  height: 100%;
   width: 50%;
   float: right;
   padding: 10% 5% 5% 5%;
   display: block;
 }
 
-.p-about{
+.about-content > h3{
   color: var(--shamrock-primary);
+}
+
+.p-about{
   margin-top: 10%;
   text-align: justify;
 }
@@ -217,6 +250,7 @@ body::-webkit-scrollbar-thumb
 
 .timeline {
   position: relative;
+  top: 5rem;
   width: 660px;
   margin: 0 auto;
   margin-top: 20px;
@@ -380,4 +414,62 @@ body::-webkit-scrollbar-thumb
   margin: 1em 0 0 0.75em;
 }
 
+main,
+.about-me{
+  position: relative;
+  top: -3rem;
+}
 
+.eduTimeline, 
+.achivements,
+.certificate{
+  position: relative;
+  top: -7.9rem;
+}
+
+.project,
+.contacts{
+  position: relative;
+  top: -5rem;
+}
+
+.debayder{
+  height: 13rem;
+  width: 100vw;
+  background-color: var(--shamrock-100);
+}
+
+
+
+.code {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.changing-text {
+  background-color: var(--clr-white);
+  font-size: 1em;
+  line-height: 0.9em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+  margin-top: 0.15em;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  text-transform: capitalize;
+  will-change: width;
+  color: var(--shamrock-600);
+}
+
+.bracket {
+  font-size: 1.4em;
+  line-height: 1.15;
+  font-family: tenso, sans-serif;
+  font-weight: 500;
+  color: var(--shamrock-800);
+}

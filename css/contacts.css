@@ -8,8 +8,6 @@
     
 }
 
-
-
 .background {
     display: flex;
   }
@@ -23,6 +21,7 @@
   .screen {
     position: relative;
     left: -12.5rem;
+    top: 5rem;
     background: #3e3e3e;
     border-radius: 15px;
   }
@@ -59,10 +58,7 @@
     background: white;
   }
   
-  .screen-header-button.close {
-    background: #ed1c6f;
-  }
-  
+
   .screen-header-button.maximize {
     background: #e8e925;
   }
@@ -166,9 +162,10 @@
   
   .app-contact{
     height: 20%;
-    width: 100rem;
+    width: 100%;
     background-color: var(--shamrock-800);
-    position: relative;
+    position: relative; 
+    left: -11rem;
     bottom: -20%;
     display: flex;
     justify-content: center;
@@ -193,6 +190,8 @@
     width: 50px;
     
   }
+
+  
 
   @media screen and (max-width: 520px) {
     .screen-body {
