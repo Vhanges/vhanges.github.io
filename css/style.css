@@ -130,9 +130,12 @@ main{
     color: var(--shamrock-secondary) !important;
 }
 
+section.hero{
+  width: 100%;
+}
+
 .hero{
   height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30% 40% 30%;
@@ -143,6 +146,7 @@ main{
   justify-self: baseline;
   align-self: baseline;
 }
+
 
 .nim{
   grid-area: name;
